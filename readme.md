@@ -1,7 +1,8 @@
 
-<b>Svelte-M</b>
+### Svelte-M
+
 Example of compiler like Svelte with Mutability.
-Attention, it's experimental, many features are very limited.
+*Warning, it's experimental, many features are very limited.*
 
 ```
 npm install
