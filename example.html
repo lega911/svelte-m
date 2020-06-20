@@ -1,5 +1,5 @@
 <script>
-	let todos = [];
+    let todos = [];
     let name = '';
     let active = {};
 
@@ -9,22 +9,22 @@
         add();
     };
 
-	function add() {
+    function add() {
         if(!name) return;
-		todos.push({
-			name: name,
-			done: false
-		});
-		name = '';
-	}
-
-	function remove(todo) {
-		todos.splice(todos.indexOf(todo), 1);
+        todos.push({
+            name: name,
+            done: false
+        });
+        name = '';
     }
 
-	function select(todo) {
+    function remove(todo) {
+        todos.splice(todos.indexOf(todo), 1);
+    }
+
+    function select(todo) {
         active = todo;
-	}
+    }
 </script>
 
 <input type="text" on:keydown={enter(e)} bind:value={name} />
