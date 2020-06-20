@@ -1,0 +1,14 @@
+{
+  "name": "svelte-cd",
+  "scripts": {
+    "build": "node compile.js ./example.html",
+    "serve": "http-server ./bin",
+    "minify": "uglifyjs ./bin/output.js -o ./bin/output.min.js -m"
+  },
+  "dependencies": {
+    "acorn": "^7.3.1",
+    "astring": "^1.4.3",
+    "http-server": "^0.12.3",
+    "uglify-es": "^3.3.9"
+  }
+}
